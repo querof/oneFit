@@ -1,0 +1,1 @@
+{"provider" : "mysql", "host" : "localhost", "port" : 3306, "database" : "onefit", "user" : "root", "password" : "darkside"}

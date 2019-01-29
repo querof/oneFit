@@ -1,0 +1,246 @@
+home:
+   path:                         /
+   defaults: {_controller:       HomeController::IndexAction}
+   methods:                      [GET]
+user_list:
+   path:                         /user
+   defaults: {_controller:       UserController::ListAction}
+   methods:                      [GET]
+
+user_create:
+   path:                         /user
+   defaults: {_controller:       UserController::CreateAction}
+   methods:                      [POST]
+
+user_get:
+   path:                         /user/{id}
+   defaults: {_controller:       UserController::GetAction}
+   requirements:
+    id:                          '\d+'
+   methods:                      [GET]
+
+user_update:
+   path:                         /user/{id}
+   defaults: {_controller:       UserController::UpdateAction}
+   requirements:
+    id:                          '\d+'
+   methods:                      [PUT,PATCH]
+
+user_confirm:
+   path:                         /userconfirm/{id}
+   defaults: {_controller:       UserController::confirmAction}
+   requirements:
+    id:                          '\d+'
+   methods:                      [GET]
+
+user_delete:
+   path:                         /user/{id}
+   defaults: {_controller:       UserController::DeleteAction}
+   requirements:
+    id:                          '\d+'
+   methods:                      [DELETE]
+
+user_search:
+   path:                         /user/search
+   defaults: {_controller:       UserController::SearchAction}
+   methods:                      [GET]
+
+auth_check:
+   path:                         /auth
+   defaults: {_controller:       AuthController::CheckAction}
+   methods:                      [GET]
+
+auth_signin:
+   path:                         /auth/signin
+   defaults: {_controller:       AuthController::SignInAction}
+   methods:                      [POST]
+
+plan_list:
+   path:                         /plan
+   defaults: {_controller:       PlanController::ListAction}
+   methods:                      [GET]
+
+plan_create:
+   path:                         /plan
+   defaults: {_controller:       PlanController::CreateAction}
+   methods:                      [POST]
+
+plan_get:
+   path:                         /plan/{id}
+   defaults: {_controller:       PlanController::GetAction}
+   requirements:
+     id:                         '\d+'
+   methods:                      [GET]
+
+plan_update:
+   path:                         /plan/{id}
+   defaults: {_controller:       PlanController::UpdateAction}
+   requirements:
+     id:                         '\d+'
+   methods:                      [PUT,PATCH]
+
+plan_delete:
+   path:                         /plan/{id}
+   defaults: {_controller:       PlanController::DeleteAction}
+   requirements:
+    id:                          '\d+'
+   methods:                      [DELETE]
+
+plan_search:
+   path:                         /plan/search
+   defaults: {_controller:       PlanController::SearchAction}
+   requirements:
+    id:                          '\s+'
+   methods:                      [GET]
+
+excercises_list:
+   path:                         /excercises
+   defaults: {_controller:       ExcercisesController::ListAction}
+   methods:                      [GET]
+
+excercises_create:
+   path:                         /excercises
+   defaults: {_controller:       ExcercisesController::CreateAction}
+   methods:                      [POST]
+
+excercises_get:
+   path:                         /excercises/{id}
+   defaults: {_controller:       ExcercisesController::GetAction}
+   requirements:
+     id:                         '\d+'
+   methods:                      [GET]
+
+excercises_update:
+   path:                         /excercises/{id}
+   defaults: {_controller:       ExcercisesController::UpdateAction}
+   requirements:
+     id:                         '\d+'
+   methods:                      [PUT,PATCH]
+
+excercises_delete:
+   path:                         /excercises/{id}
+   defaults: {_controller:       ExcercisesController::DeleteAction}
+   requirements:
+    id:                          '\d+'
+   methods:                      [DELETE]
+
+excercises_search:
+   path:                         /excercises/search
+   defaults: {_controller:       ExcercisesController::SearchAction}
+   requirements:
+    id:                          '\s+'
+   methods:                      [GET]
+
+user_plan_list:
+   path:                         /userplan
+   defaults: {_controller:       UserPlanController::ListAction}
+   methods:                      [GET]
+
+user_plan_create:
+   path:                         /userplan
+   defaults: {_controller:       UserPlanController::CreateAction}
+   methods:                      [POST]
+
+user_plan_get:
+   path:                         /userplan/{id}
+   defaults: {_controller:       UserPlanController::GetAction}
+   requirements:
+     id:                         '\d+'
+   methods:                      [GET]
+
+user_plan_update:
+   path:                         /userplan/{id}
+   defaults: {_controller:       UserPlanController::UpdateAction}
+   requirements:
+     id:                         '\d+'
+   methods:                      [PUT,PATCH]
+
+user_plan_delete:
+   path:                         /userplan/{id}
+   defaults: {_controller:       UserPlanController::DeleteAction}
+   requirements:
+    id:                          '\d+'
+   methods:                      [DELETE]
+
+user_plan_search:
+   path:                         /userplan/search
+   defaults: {_controller:       UserPlanController::SearchAction}
+   requirements:
+    id:                          '\s+'
+   methods:                      [GET]
+
+work_out_days_list:
+   path:                         /workoutdays
+   defaults: {_controller:       WorkoutDaysController::ListAction}
+   methods:                      [GET]
+
+work_out_days_create:
+   path:                         /workoutdays
+   defaults: {_controller:       WorkoutDaysController::CreateAction}
+   methods:                      [POST]
+
+work_out_days_get:
+   path:                         /workoutdays/{id}
+   defaults: {_controller:       WorkoutDaysController::GetAction}
+   requirements:
+     id:                         '\d+'
+   methods:                      [GET]
+
+work_out_days_update:
+   path:                         /workoutdays/{id}
+   defaults: {_controller:       WorkoutDaysController::UpdateAction}
+   requirements:
+     id:                         '\d+'
+   methods:                      [PUT,PATCH]
+
+work_out_days_delete:
+   path:                         /workoutdays/{id}
+   defaults: {_controller:       WorkoutDaysController::DeleteAction}
+   requirements:
+    id:                          '\d+'
+   methods:                      [DELETE]
+
+work_out_days_search:
+   path:                         /workoutdays/search
+   defaults: {_controller:       WorkoutDaysController::SearchAction}
+   requirements:
+    id:                          '\s+'
+   methods:                      [GET]
+
+work_out_days_excecises_list:
+   path:                         /workoutdaysexcercises
+   defaults: {_controller:       WorkoutDaysExcercisesController::ListAction}
+   methods:                      [GET]
+
+work_out_days_excecises_create:
+   path:                         /workoutdaysexcercises
+   defaults: {_controller:       WorkoutDaysExcercisesController::CreateAction}
+   methods:                      [POST]
+
+work_out_days_excecises_get:
+   path:                         /workoutdaysexcercises/{id}
+   defaults: {_controller:       WorkoutDaysExcercisesController::GetAction}
+   requirements:
+     id:                         '\d+'
+   methods:                      [GET]
+
+work_out_days_excecises_update:
+   path:                         /workoutdaysexcercises/{id}
+   defaults: {_controller:       WorkoutDaysExcercisesController::UpdateAction}
+   requirements:
+     id:                         '\d+'
+   methods:                      [PUT,PATCH]
+
+work_out_days_excecises_delete:
+   path:                         /workoutdaysexcercises/{id}
+   defaults: {_controller:       WorkoutDaysExcercisesController::DeleteAction}
+   requirements:
+    id:                          '\d+'
+   methods:                      [DELETE]
+
+work_out_days_excecises_search:
+   path:                         /workoutdaysexcercises/search
+   defaults: {_controller:       WorkoutDaysExcercisesController::SearchAction}
+   requirements:
+    id:                          '\s+'
+   methods:                      [GET]

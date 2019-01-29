@@ -1,0 +1,20 @@
+{
+  "require": {
+    "phpunit/phpunit": "^7.3",
+    "symfony/routing": "^4.1",
+    "symfony/http-foundation": "^4.1",
+    "symfony/yaml": "^4.1",
+    "symfony/config": "^4.1",
+    "symfony/http-kernel": "^4.1",
+    "guzzlehttp/guzzle": "^6.3",
+    "firebase/php-jwt": "^5.0",
+    "swiftmailer/swiftmailer": "^6.0",
+    "phpmailer/phpmailer": "^6.0"
+  },
+  "require-dev": {
+    "symfony/phpunit-bridge": "^4.1",
+    "symfony/browser-kit": "^4.1",
+    "symfony/css-selector": "^4.1",
+    "symfony/var-dumper": "^4.1"
+  }
+}

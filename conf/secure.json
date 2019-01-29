@@ -1,0 +1,3 @@
+{
+  "secure": ["workout_days_excercises_create", "workout_days_excercises_update", "workout_days_excercises_delete", "workout_days_create", "workout_days_update", "workout_days_delete", "user_plan_create", "user_plan_update", "user_plan_delete", "plan_create", "plan_update", "plan_delete", "excercises_create", "excercises_update", "excercises_delete", "user_update", "user_delete", "user_get", "user_search"]
+}
